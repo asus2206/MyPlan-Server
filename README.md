@@ -6,5 +6,7 @@ To run this application, you'll need access to a mysql server.
 
 Also make shure to have Sails.js installed. Get more informations under [www.sailsjs.org](http://sailsjs.org).
 
+## Installation Guide:
+
 
 
