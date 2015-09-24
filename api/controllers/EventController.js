@@ -20,6 +20,20 @@ module.exports = {
 	          else
 	            res.json(events);
 	        });
-	  }
+	  },
+
+	numberOfEvents:function(req, res){
+		var user = req.param('user');
+		Event.count({User:user})
+			.exec(function (err, num) {
+			    if(err) {
+			       return console.log(err);
+			    }
+			    else{
+			    	console.log(num);
+			    	return num;
+			    }
+			});
+	}
 };
 
